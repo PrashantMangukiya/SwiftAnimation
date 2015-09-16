@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qLe-VR-if5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Animation Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAf-B3-mHt">
+                                <rect key="frame" x="20" y="84" width="280" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oAj-T1-ROj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Move Object - Auto">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UhC-wc-88n" kind="show" id="QUU-ZN-Ev0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tns-p7-vNX">
+                                <rect key="frame" x="20" y="144" width="280" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hPO-Uv-Erp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Move Object - Manual">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kQ6-7U-7TA" kind="show" id="ODV-6u-raQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijO-dd-Kfb">
+                                <rect key="frame" x="20" y="204" width="280" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZzY-EK-OHy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Coming Soon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNg-yP-3hf">
+                                <rect key="frame" x="20" y="264" width="280" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uVd-Ay-wV1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Coming Soon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b2-7x-QKT">
+                                <rect key="frame" x="20" y="324" width="280" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AzF-yj-Vel"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Coming Soon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-jy-XG3">
+                                <rect key="frame" x="20" y="384" width="280" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cll-Na-J85"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Coming Soon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tns-p7-vNX" firstAttribute="top" secondItem="PAf-B3-mHt" secondAttribute="bottom" constant="20" id="2Q1-uc-nOr"/>
+                            <constraint firstAttribute="trailing" secondItem="kSP-jy-XG3" secondAttribute="trailing" constant="20" id="7gS-o6-osQ"/>
+                            <constraint firstItem="DNg-yP-3hf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8gR-TD-W16"/>
+                            <constraint firstAttribute="trailing" secondItem="DNg-yP-3hf" secondAttribute="trailing" constant="20" id="9lr-Bp-nKe"/>
+                            <constraint firstItem="PAf-B3-mHt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="9yd-ee-bHc"/>
+                            <constraint firstAttribute="trailing" secondItem="ijO-dd-Kfb" secondAttribute="trailing" constant="20" id="TJN-3C-4ho"/>
+                            <constraint firstItem="kSP-jy-XG3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Tuh-ff-lsT"/>
+                            <constraint firstItem="ijO-dd-Kfb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="WTY-OU-JoG"/>
+                            <constraint firstItem="9b2-7x-QKT" firstAttribute="top" secondItem="DNg-yP-3hf" secondAttribute="bottom" constant="20" id="WVr-vg-gta"/>
+                            <constraint firstAttribute="trailing" secondItem="PAf-B3-mHt" secondAttribute="trailing" constant="20" id="c4D-3e-JS0"/>
+                            <constraint firstItem="ijO-dd-Kfb" firstAttribute="top" secondItem="tns-p7-vNX" secondAttribute="bottom" constant="20" id="ccL-2z-DZU"/>
+                            <constraint firstAttribute="trailing" secondItem="tns-p7-vNX" secondAttribute="trailing" constant="20" id="dBu-Xh-Sbb"/>
+                            <constraint firstItem="PAf-B3-mHt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="gha-UT-LC8"/>
+                            <constraint firstItem="kSP-jy-XG3" firstAttribute="top" secondItem="9b2-7x-QKT" secondAttribute="bottom" constant="20" id="kvS-D0-UJe"/>
+                            <constraint firstAttribute="trailing" secondItem="9b2-7x-QKT" secondAttribute="trailing" constant="20" id="l5G-BL-Y9P"/>
+                            <constraint firstItem="9b2-7x-QKT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="mBH-Ow-LJ9"/>
+                            <constraint firstItem="tns-p7-vNX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="thd-9C-FUa"/>
+                            <constraint firstItem="DNg-yP-3hf" firstAttribute="top" secondItem="ijO-dd-Kfb" secondAttribute="bottom" constant="20" id="wnp-0m-gk5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animation Demo" id="Mv3-8O-4eY"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="366"/>
+        </scene>
+        <!--Move Object - Manual-->
+        <scene sceneID="6ET-EP-tWK">
+            <objects>
+                <viewController id="kQ6-7U-7TA" customClass="MoveObjectManualViewController" customModule="SwiftAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xgr-pP-qB4"/>
+                        <viewControllerLayoutGuide type="bottom" id="gsN-r1-1Hu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Otx-vf-TIt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-mW-jTL">
+                                <rect key="frame" x="140" y="430" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="DBe-42-hOK"/>
+                                    <constraint firstAttribute="width" constant="40" id="Pax-iv-c6F"/>
+                                </constraints>
+                                <state key="normal" image="Down Arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveDownButtonAction:" destination="kQ6-7U-7TA" eventType="touchUpInside" id="TZb-Kh-IIQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEK-0R-rCj">
+                                <rect key="frame" x="180" y="390" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0vo-vv-hlb"/>
+                                    <constraint firstAttribute="width" constant="40" id="uM7-pQ-nGU"/>
+                                </constraints>
+                                <state key="normal" image="Right Arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveRightButtonAction:" destination="kQ6-7U-7TA" eventType="touchUpInside" id="Jaf-6k-xp8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIz-nA-L6A">
+                                <rect key="frame" x="100" y="390" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0jE-zi-Ed9"/>
+                                    <constraint firstAttribute="height" constant="40" id="F0P-0f-KLA"/>
+                                </constraints>
+                                <state key="normal" image="Left Arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveLeftButtonAction:" destination="kQ6-7U-7TA" eventType="touchUpInside" id="lzR-WR-shn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dw-FQ-o5l">
+                                <rect key="frame" x="140" y="350" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="jBB-Zn-Zf8"/>
+                                    <constraint firstAttribute="height" constant="40" id="neh-GS-7df"/>
+                                </constraints>
+                                <state key="normal" image="Up Arrow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="moveUpButtonAction:" destination="kQ6-7U-7TA" eventType="touchUpInside" id="j8y-W4-n0m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="jIz-nA-L6A" secondAttribute="centerX" constant="40" id="0LQ-YE-bcb"/>
+                            <constraint firstAttribute="centerX" secondItem="wEK-0R-rCj" secondAttribute="centerX" constant="-40" id="4FI-la-s0b"/>
+                            <constraint firstItem="gsN-r1-1Hu" firstAttribute="top" secondItem="fdw-mW-jTL" secondAttribute="bottom" constant="10" id="I8e-R8-KL8"/>
+                            <constraint firstAttribute="centerX" secondItem="4dw-FQ-o5l" secondAttribute="centerX" id="RSa-HK-JVr"/>
+                            <constraint firstItem="fdw-mW-jTL" firstAttribute="top" secondItem="4dw-FQ-o5l" secondAttribute="bottom" constant="40" id="WPv-cW-LKL"/>
+                            <constraint firstItem="fdw-mW-jTL" firstAttribute="top" secondItem="wEK-0R-rCj" secondAttribute="bottom" id="Y5b-rq-uxy"/>
+                            <constraint firstItem="fdw-mW-jTL" firstAttribute="top" secondItem="jIz-nA-L6A" secondAttribute="bottom" id="sCv-WG-lus"/>
+                            <constraint firstAttribute="centerX" secondItem="fdw-mW-jTL" secondAttribute="centerX" id="yIV-KV-1m1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Move Object - Manual" id="iWX-Xe-6l5"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="moveDownButton" destination="fdw-mW-jTL" id="ejl-7d-AUW"/>
+                        <outlet property="moveLeftButton" destination="jIz-nA-L6A" id="v63-AT-TfG"/>
+                        <outlet property="moveRightButton" destination="wEK-0R-rCj" id="sB0-HM-Mbb"/>
+                        <outlet property="moveUpButton" destination="4dw-FQ-o5l" id="oce-2W-6sC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gpl-YH-qQj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="656"/>
+        </scene>
+        <!--Move Object - Auto-->
+        <scene sceneID="qkq-AG-aK6">
+            <objects>
+                <viewController id="UhC-wc-88n" customClass="MoveObjectAutoViewController" customModule="SwiftAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ISr-3f-5At"/>
+                        <viewControllerLayoutGuide type="bottom" id="5SH-OH-6hF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdo-Zw-HxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQL-1f-aMy">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="To2-hX-4tu"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nrB-1P-l5F"/>
+                                    <barButtonItem title="Play" id="yWt-wD-PU9">
+                                        <connections>
+                                            <action selector="playButtonAction:" destination="UhC-wc-88n" id="rh9-3U-CWS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="y1k-0C-agA"/>
+                                    <barButtonItem title="Stop" id="frT-72-5ec">
+                                        <connections>
+                                            <action selector="stopButtonAction:" destination="UhC-wc-88n" id="6zV-J6-8KB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fpB-KZ-78D"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SQL-1f-aMy" firstAttribute="leading" secondItem="cdo-Zw-HxQ" secondAttribute="leading" id="5Gs-Ye-xad"/>
+                            <constraint firstAttribute="trailing" secondItem="SQL-1f-aMy" secondAttribute="trailing" id="MaM-ib-ZKG"/>
+                            <constraint firstItem="5SH-OH-6hF" firstAttribute="top" secondItem="SQL-1f-aMy" secondAttribute="bottom" id="h0s-Iq-hX0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Move Object - Auto" id="lv6-mX-3Pg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bottomToolbar" destination="SQL-1f-aMy" id="4j1-4M-EmA"/>
+                        <outlet property="playButton" destination="yWt-wD-PU9" id="89c-38-fWs"/>
+                        <outlet property="stopButton" destination="frT-72-5ec" id="Hzq-J4-vDj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQZ-y1-gPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="81"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bx5-1g-glb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qLe-VR-if5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K2V-F2-SHD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iti-IS-qiE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeW-4c-cjx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Down Arrow" width="22" height="12"/>
+        <image name="Left Arrow" width="12" height="22"/>
+        <image name="Right Arrow" width="12" height="22"/>
+        <image name="Up Arrow" width="22" height="12"/>
+    </resources>
+</document>
