@@ -50,3 +50,5 @@ iPhone 4s, 5, 5s, 5c, 6, 6 Plus, 6s, 6s Plus, all iPad having iOS 8.4, iOS 9
 ## License
 SwiftAnimation is available under the MIT license. See the LICENSE file for more info.
 
+## Legacy Version
+Xcode 6, iOS 8.4 based source code moved to ``Source-Xcode6`` folder. Please note that Xcode 6 based source code are deprecated and not upto date. I will suggest to use latest Xcode 7 based source from``SwiftAnimation`` folder at root.
